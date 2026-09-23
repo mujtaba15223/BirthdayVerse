@@ -4,98 +4,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Birthday</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <!-- CONFETTI -->
   <div id="confetti-container"></div>
+
+
+  
+
   <section class="step1">
-    <h3 style="color: #E8C98A;">A little surprise awaits...</h3>
-    <p style="color: #E8C98A;">• ─── ✨ ─── •</p>
-    <h1 style="color: #FFF8F0;">Something Special<br>Is Waiting For You</h1>
-    <p style="color: #B8B5C9;">Made just for you ✨</p>
-    <button id="startbtn">→</button>
-    <p style="color: #FFF8F0;">Tap to begin</p>
-    <p style="color: #E8C98A;">· ──── ❤️ ──── ·</p>
+
+    <h3 style="color: #E8C98A;">
+      A little surprise awaits...
+    </h3>
+
+    <p style="color: #E8C98A;">
+      • ─── ✨ ─── •
+    </p>
+
+    <h1 style="color: #FFF8F0;">
+      Something Special<br>
+      Is Waiting For You
+    </h1>
+
+    <p style="color: #B8B5C9;">
+      Made just for you ✨
+    </p>
+
+
+    <!-- NAME INPUT -->
+
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Enter your name ✨"
+      autocomplete="off"
+      maxlength="30"
+    >
+
+
+    <!-- START BUTTON -->
+
+    <button id="startbtn">
+      →
+    </button>
+
+    <p style="color: #FFF8F0;">
+      Tap to begin
+    </p>
+
+    <p style="color: #E8C98A;">
+      · ──── ❤️ ──── ·
+    </p>
+
+
+    
+
     <div class="stars"></div>
 
-    <div class="cloud cloud-left"></div>
-    <div class="cloud cloud-right"></div>
-    </div>
-  </section>
-  <section class="step2">
-    <div class="stars"></div>
-    <div class="birthday-reveal">
-      <h3>Today its all about</h3>
-      <h1>You</h1>
-      <p class="birthday-name">NAME</p>
-      <h2>Happy Birthday 🎂</h2>
-      <div id="cake">🎂</div>
-      
-      <p class="birthday-message">
-    Wishing you a day filled with love, laughter and happiness.
-</p>
-<button id="continue-btn" class="continue-btn">
-    Continue the surprise →
-</button>
-    </div>
-  </section>
-  <section class="step3">
-    <div class="stars"></div>
-    <h1 class="title">Just For You</h1>
-    <p class="sub-title">A little something <br>to celebrate you ✨....</p>
-    <div class="message-card">
-      <p>You are amazing, just the way you are.</p>
-      <span class="card-heart">♥</span>
-      <p class="main-message">
-    You seem like a genuinely kind and positive person. Stay the way you are and keep smiling.
-</p>
-    </div>
-    <p class="closing-message">
-    Keep this little moment forever.
-</p>
-<button class="next-btn">Next →</button>
-  </section>
-  <section id="step4">
-    <div class="stars"></div>
-    <div class="cloud cloud-left">☁️</div>
-    <div class="cloud cloud-right">☁️</div>
-    <h1>One Last Thing...</h1>
-    <p>There's something<br>special inside.</p>
-    <div class="gift-box" id="giftBox">
-    🎁
-</div>
-<button id="openGift">🎁 Open it →</button> 
-  </section>
-  <section id="finalSurprise">
-    <div class="stars"></div>
-    <h1>Happy Birthday ❤️</h1>
-    <p>You deserve all the happiness in the world ✨....</p>
-    <div class="final-cake" id="finalcake">🎂</div>
+
     
-    <div id="letter">
-      <p>
-    On your special day,
-    You are someone truly special, and I hope you always remember that.
-    <br><br>
-    May this new chapter of your life be filled with beautiful moments,
-    genuine happiness, endless smiles, and all the things you've been
-    wishing for. I hope every dream you have slowly turns into reality.
-    <br><br>
-    Thank you for being the wonderful person you are. Keep smiling,
-    keep shining, and never stop being yourself.
-    <br><br>
-    No matter where life takes you, I hope you always find reasons to
-    be happy and people who make your heart feel at home.
-    <br><br>
-    Happy Birthday once again. ❤️
-    <br>
-    You deserve all the happiness in the world.
-</p>
+
+    <div class="cloud cloud-left"></div>
+
+    <div class="cloud cloud-right"></div>
+
+  </section>
+
+
+
+ 
+
+  <section class="step2">
+
+    <div class="stars"></div>
+
+    <div class="birthday-reveal">
+
+      <h3>
+        Today it's all about
+      </h3>
+
+      <h1>
+        You
+      </h1>
+
+
+   
+
+      <p
+        class="birthday-name"
+        id="birthdayName">
+      </p>
+
+
+      <h2>
+        Happy Birthday 🎂
+      </h2>
+
+
+      
+
+      <div id="cake">
+        🎂
+      </div>
+
+
+      
+
+      <p class="birthday-message">
+        Wishing you a day filled with love,
+        laughter and happiness.
+      </p>
+
+
+
+      <button
+        id="continue-btn"
+        class="continue-btn">
+
+        Continue the surprise →
+
+      </button>
+
     </div>
-</section>
+
+  </section>
+
+
+
+
+
+  <section class="step3">
+
+    <div class="stars"></div>
+
+
+    <h1 class="title">
+      Just For You
+    </h1>
+
+
+    <p class="sub-title">
+      A little something <br>
+      to celebrate you ✨....
+    </p>
+
+
+
+    <div class="message-card">
+
+      <p>
+        You are amazing, just the way you are.
+      </p>
+
+
+      <span class="card-heart">
+        ♥
+      </span>
+
+
+      <p class="main-message">
+        You seem like a genuinely kind and
+        positive person. Stay the way you are
+        and keep smiling.
+      </p>
+
+    </div>
+
+
+    <p class="closing-message">
+      Keep this little moment forever.
+    </p>
+
+
+
+
+    <button class="next-btn">
+      Next →
+    </button>
+
+  </section>
+
+
+
+
+
+  <section id="step4">
+
+    <div class="stars"></div>
+
+
+    <!-- CLOUDS -->
+
+    <div class="cloud cloud-left">
+      ☁️
+    </div>
+
+    <div class="cloud cloud-right">
+      ☁️
+    </div>
+
+
+    <h1>
+      One Last Thing...
+    </h1>
+
+
+    <p>
+      There's something<br>
+      special inside.
+    </p>
+
+
+    <!-- GIFT -->
+
+    <div
+      class="gift-box"
+      id="giftBox">
+
+      🎁
+
+    </div>
+
+
+    <!-- OPEN GIFT -->
+
+    <button id="openGift">
+      🎁 Open it →
+    </button>
+
+  </section>
+
+
+
+  <!-- =========================================
+       FINAL SURPRISE
+       ========================================= -->
+
+  <section id="finalSurprise">
+
+    <div class="stars"></div>
+
+
+    <!-- DYNAMIC FINAL NAME -->
+
+    <h1>
+      Happy Birthday
+      <span id="finalBirthdayName"></span>
+      ❤️
+    </h1>
+
+
+    <p>
+      You deserve all the happiness
+      in the world ✨....
+    </p>
+
+
+    <!-- FINAL CAKE -->
+
+    <div
+      class="final-cake"
+      id="finalcake">
+
+      🎂
+
+    </div>
+
+
+    <!-- LETTER -->
+
+    <div id="letter">
+
+      <p>
+
+        On your special day,
+
+        You are someone truly special,
+        and I hope you always remember that.
+
+        <br><br>
+
+        May this new chapter of your life
+        be filled with beautiful moments,
+        genuine happiness, endless smiles,
+        and all the things you've been
+        wishing for.
+
+        I hope every dream you have
+        slowly turns into reality.
+
+        <br><br>
+
+        Thank you for being the wonderful
+        person you are.
+
+        Keep smiling,
+        keep shining,
+        and never stop being yourself.
+
+        <br><br>
+
+        No matter where life takes you,
+        I hope you always find reasons to
+        be happy and people who make your
+        heart feel at home.
+
+        <br><br>
+
+        Happy Birthday once again. ❤️
+
+        <br>
+
+        You deserve all the happiness
+        in the world.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+
+
   <script src="index.js"></script>
+
 </body>
 
 </html>
