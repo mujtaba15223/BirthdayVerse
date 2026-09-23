@@ -2,6 +2,9 @@ let birthdayName = "";
 
 const starsContainers = document.querySelectorAll(".stars");
 
+
+
+
 starsContainers.forEach(starsc => {
 
     for (let i = 0; i <= 90; i++) {
@@ -33,7 +36,7 @@ starsContainers.forEach(starsc => {
 });
 
 
-/* CLOUD POSITION */
+
 
 document.querySelectorAll(".cloud").forEach(cloud => {
 
@@ -45,26 +48,37 @@ document.querySelectorAll(".cloud").forEach(cloud => {
 });
 
 
-/* MAIN STEPS */
-
-const start = document.querySelector("#startbtn");
-
-const step1 = document.querySelector(".step1");
-
-const step2 = document.querySelector(".step2");
 
 
-/* START BUTTON + NAME */
+const start =
+    document.querySelector("#startbtn");
+
+const step1 =
+    document.querySelector(".step1");
+
+const step2 =
+    document.querySelector(".step2");
+
+
+
 
 start.addEventListener("click", () => {
 
-    const nameInput = document.querySelector("#nameInput");
+    const nameInput =
+        document.querySelector("#nameInput");
 
-    birthdayName = nameInput.value.trim();
+    birthdayName =
+        nameInput.value.trim();
+
+
+    /* If name is empty */
 
     if (birthdayName === "") {
 
-        alert("Please enter your name ❤️");
+        const namePopup =
+            document.querySelector("#namePopup");
+
+        namePopup.style.display = "flex";
 
         nameInput.focus();
 
@@ -72,13 +86,13 @@ start.addEventListener("click", () => {
     }
 
 
-    /* Show name on birthday page */
+    
 
     document.querySelector("#birthdayName").textContent =
         birthdayName;
 
 
-    /* Show name on final surprise */
+    
 
     document.querySelector("#finalBirthdayName").textContent =
         birthdayName;
@@ -93,13 +107,33 @@ start.addEventListener("click", () => {
 });
 
 
-/* CAKE */
 
-const cakes = document.querySelector("#cake");
 
-const message = document.querySelector(".birthday-message");
+const namePopup =
+    document.querySelector("#namePopup");
 
-const button = document.querySelector("#continue-btn");
+const closeNamePopup =
+    document.querySelector("#closeNamePopup");
+
+
+closeNamePopup.addEventListener("click", () => {
+
+    namePopup.style.display = "none";
+
+    document.querySelector("#nameInput").focus();
+
+});
+
+
+
+const cakes =
+    document.querySelector("#cake");
+
+const message =
+    document.querySelector(".birthday-message");
+
+const button =
+    document.querySelector("#continue-btn");
 
 
 cakes.addEventListener("click", () => {
@@ -116,7 +150,7 @@ cakes.addEventListener("click", () => {
 });
 
 
-/* CONFETTI */
+
 
 const CONFETTI_COUNT = 150;
 
@@ -148,10 +182,10 @@ const SHAPES = [
 ];
 
 
-const cake = document.querySelector("#cake");
-
 const confettiContainer =
     document.querySelector("#confetti-container");
+
+
 
 
 function randomBetween(min, max) {
@@ -161,17 +195,28 @@ function randomBetween(min, max) {
 }
 
 
+
+
 function createConfettiPiece() {
 
-    const piece = document.createElement("div");
+    const piece =
+        document.createElement("div");
 
 
     const shape =
-        SHAPES[Math.floor(Math.random() * SHAPES.length)];
+        SHAPES[
+            Math.floor(
+                Math.random() * SHAPES.length
+            )
+        ];
 
 
     const color =
-        COLORS[Math.floor(Math.random() * COLORS.length)];
+        COLORS[
+            Math.floor(
+                Math.random() * COLORS.length
+            )
+        ];
 
 
     piece.classList.add(
@@ -180,7 +225,8 @@ function createConfettiPiece() {
     );
 
 
-    const size = randomBetween(7, 15);
+    const size =
+        randomBetween(7, 15);
 
 
     if (
@@ -199,7 +245,9 @@ function createConfettiPiece() {
 
     }
 
-    else if (shape === "shape-triangle") {
+    else if (
+        shape === "shape-triangle"
+    ) {
 
         piece.style.borderBottomColor =
             color;
@@ -269,6 +317,8 @@ function createConfettiPiece() {
 }
 
 
+
+
 function launchConfetti() {
 
     for (
@@ -287,7 +337,7 @@ function launchConfetti() {
 }
 
 
-/* STEP 2 → STEP 3 */
+
 
 const step3 =
     document.querySelector(".step3");
@@ -302,11 +352,9 @@ button.addEventListener("click", () => {
 });
 
 
-/* STEP 3 → STEP 4 */
 
 const nxtbtn =
     document.querySelector(".next-btn");
-
 
 const step4 =
     document.querySelector("#step4");
@@ -321,9 +369,9 @@ nxtbtn.addEventListener("click", () => {
 });
 
 
-/* OPEN GIFT */
 
-let openGift =
+
+const openGift =
     document.querySelector("#openGift");
 
 
@@ -338,7 +386,7 @@ openGift.addEventListener("click", () => {
 });
 
 
-/* FINAL CAKE */
+
 
 const finalCake =
     document.querySelector("#finalcake");
